@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.emory">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <queries>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/emotions"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/emotions"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Emory">
+
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".AddTodoActivity"/>
+        <activity android:name=".TodoListActivity"/>
+        <activity android:name=".TodoListDetails" />
+        <activity android:name=".MoodAnalyticsActivity" />
+        <activity android:name=".EntriesActivity" />
+        <activity android:name=".WriteNoteActivity" />
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".SignInActivity" />
+        <activity android:name=".ReminderActivity"/>
+        <activity android:name=".AddMoodActivity"/>
+        <activity android:name=".ChangePasswordActivity" />
+        <activity android:name=".ChangeNicknameActivity" />
+        <activity android:name=".MainScreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <receiver android:name=".AlarmReceiver"/>
+    </application>
+
+</manifest>

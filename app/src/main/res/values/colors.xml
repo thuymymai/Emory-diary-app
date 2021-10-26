@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name='whiteBlur'>#88FFFFFF</color>
+    <color name='primary'>#FFF6EE</color>
+    <color name='secondary'>#C87F7F</color>
+    <color name='highlight'>#F0CBCA</color>
+    <color name="diaryText">#3B5998</color>
+    <color name="calendarText">#A11818</color>
+    <color name="blur">#00FFFFFF</color>
+    <color name="icon">#af4b4b</color>
+    <color name="grey">#cccccc</color>
+    <color name="good">#bd9354</color>
+    <color name="happy">#82B2B8</color>
+    <color name="excited">#8DA47E</color>
+    <color name="sad">#F9968B</color>
+    <color name="awful">#C54B6C</color>
+    <color name="terrible">#897C87</color>
+</resources>

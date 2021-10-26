@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/highlight"
+    android:orientation="vertical"
+    tools:context=".ChangeNicknameActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/primary">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/change_nickname"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/icon"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/your_nickname"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:paddingStart="20dp"
+        android:gravity="center_vertical"
+        android:id="@+id/txtNickName"
+        android:textColor="@color/black"
+        android:layout_marginRight="16dp"
+        android:background="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nickname"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="16dp"
+            android:id="@+id/edNickName"
+            android:textColor="@color/black"
+            android:background="@drawable/edit_text_shape"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="30dp"/>
+
+    <Button
+        android:id="@+id/btnChange"
+        android:layout_width="170dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:background="@drawable/button_radius"
+        android:text="@string/button_change"
+        android:textColor="@color/primary">
+
+    </Button>
+</LinearLayout>
